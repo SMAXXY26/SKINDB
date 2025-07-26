@@ -15,16 +15,19 @@ async function CollectionPage(){
     });
     return(
         <div>
-            <Navbar></Navbar>
-            <div className="relative h-screen">
-                <div className="grid grid-cols-3 w-[1500px] h-full bg-[#333446] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <Navbar />
+            <div className="flex justify-around h-screen">
+                <div className="p-10 grid grid-cols-3 gap-5 w-4/5 h-screen bg-[#333446]">
                     {cases.map((caseItem) => (
-                        <div className="m-3 p-4 w-[500px] h-[300px] justify-center items-center" key={caseItem.id}>
-                            <Link href={`/${White2Under(caseItem.name)}`}>
-                                <CaseTile imageUrl={`/Case/${caseItem.name}.jpeg`} name={caseItem.name} />
-                            </Link>
+                        <div className="flex items-center justify-around" key={caseItem.id}>
+                            <div className="justify-center ">
+                                <Link href={`/${White2Under(caseItem.name)}`}>
+                                    <CaseTile imageUrl={`/Case/${caseItem.name}.jpeg`} name={caseItem.name} />
+                                </Link>
+                            </div>
                         </div>
-                    ))}
+                    ))
+                    }
                 </div>
             </div>
         </div>
