@@ -137,7 +137,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/home/tensor/dev/projects/SKINDB/skindb/app/generated/prisma",
+      "value": "/home/smaxxy/SKINDB/skindb/app/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -151,11 +151,12 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/home/tensor/dev/projects/SKINDB/skindb/prisma/schema.prisma",
+    "sourceFilePath": "/home/smaxxy/SKINDB/skindb/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": null
+    "rootEnvPath": null,
+    "schemaEnvPath": "../../../.env"
   },
   "relativePath": "../../../prisma",
   "clientVersion": "6.7.0",
@@ -164,7 +165,7 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
-  "postinstall": true,
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
