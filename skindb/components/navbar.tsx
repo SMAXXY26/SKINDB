@@ -17,8 +17,13 @@ const Navbar: React.FC = () => {
                     </Link>
                 </li>
                 <li>
+                    <Link href="/hot-cases" className="text-sm font-bold uppercase tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-300 hover:to-orange-400 transition-all hover:drop-shadow-[0_0_8px_rgba(251,191,36,0.8)]">
+                        🔥 Hot Cases
+                    </Link>
+                </li>
+                <li>
                     <Link href="/sim" className="px-5 py-2 text-xs font-black text-black uppercase bg-white rounded-sm hover:bg-gray-200 transition-transform active:scale-95 tracking-widest border border-white/50 shadow-[0_0_15px_rgba(255,255,255,0.3)]">
-                        Sim
+                        Opening
                     </Link>
                 </li>
             </ul>

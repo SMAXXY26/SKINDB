@@ -1,5 +1,6 @@
 import prisma from '@/lib/prisma';
 import CaseOpening, { Skin } from '../CaseOpening';
+import Navbar from "@/components/navbar";
 
 export const dynamic = 'force-dynamic';
 
@@ -76,10 +77,24 @@ export default async function Page({ params }: PageProps) {
         }
 
         // Pass final skins list (standard or legacy)
-        return <CaseOpening dbSkins={skins} caseName={decodedCaseName} />;
+        return (
+            <div className="min-h-screen bg-[#08090d] text-white">
+                <Navbar />
+                <div className="pt-24">
+                    <CaseOpening dbSkins={skins} caseName={decodedCaseName} />
+                </div>
+            </div>
+        );
     } else {
         console.warn(`Case ${dbQueryName} not found in database. Param was: ${caseName}`);
     }
 
-    return <CaseOpening dbSkins={skins} caseName={decodedCaseName} />;
+    return (
+        <div className="min-h-screen bg-[#08090d] text-white">
+            <Navbar />
+            <div className="pt-24">
+                <CaseOpening dbSkins={skins} caseName={decodedCaseName} />
+            </div>
+        </div>
+    );
 }

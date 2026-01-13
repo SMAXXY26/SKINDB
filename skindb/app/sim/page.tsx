@@ -25,9 +25,9 @@ export default async function SimHubPage() {
       <div className="pt-32 pb-20 px-4 max-w-7xl mx-auto">
         <div className="mb-12 text-center">
           <h1 className="text-6xl font-black italic tracking-tighter uppercase mb-4">
-            Case <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-500 animate-pulse">Simulator</span>
+            Case <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-500 animate-pulse">Opening</span>
           </h1>
-          <p className="text-gray-400 text-lg tracking-widest uppercase">Select a case to unbox</p>
+          <p className="text-gray-400 text-lg tracking-widest uppercase">Select a case to open</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -57,7 +57,7 @@ export default async function SimHubPage() {
                       {caseItem.name.replace(' Case', '')}
                     </h3>
                     <div className="mt-4 px-4 py-1 bg-yellow-500/10 text-yellow-500 text-xs font-bold uppercase tracking-[0.2em] rounded-full border border-yellow-500/20 group-hover:bg-yellow-500 group-hover:text-black transition-colors">
-                      Simulate
+                      Open
                     </div>
                   </div>
                 </Link>
